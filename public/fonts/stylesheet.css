@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Nokora';
+    src: url('nokora-regular-webfont.eot');
+    src: url('nokora-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('nokora-regular-webfont.woff2') format('woff2'),
+         url('nokora-regular-webfont.woff') format('woff'),
+         url('nokora-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
