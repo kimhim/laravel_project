@@ -6,22 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Shop Homepage - Start Bootstrap Template</title>
-
+     <title>@yield('title')</title>
     <!-- Bootstrap Core CSS -->
     <link href="{{asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="{{asset('css/shop-homepage.css') }}" rel="stylesheet">
-
+    <link href="{{asset('css/bootstrap-datepicker.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/bootstrap-toggle.css') }}" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 <body>
     <nav class="navbar navbar-fixed-top">
@@ -64,7 +61,7 @@
                     }
                     if(!isset($_SESSION['login_user'])){
                         ?>
-                        <li><a href="register.php">ចុះ​ឈ្មោះ​ទីនេះ!</a></li>
+                        <li><a href="{{ route('user.create') }}">ចុះ​ឈ្មោះ​ទីនេះ!</a></li>
                         <li>
                             <a class="btn btn-warning btn-outline btn-circle collapsed"  data-toggle="collapse" href="#nav-collapse2" aria-expanded="false" aria-controls="nav-collapse2">ចូល​</a>
                         </li>
@@ -93,135 +90,7 @@
     </nav>
     <!-- Page Content -->
     <div class="container">
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="row carousel-holder">
-                    <div class="col-md-12">
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <img class="slide-image" src="http://placehold.it/1140x350" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="slide-image" src="http://placehold.it/1140x350" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="slide-image" src="http://placehold.it/1140x350" alt="">
-                                </div>
-                            </div>
-                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                            </a>
-                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row">
-
-                    <div class="col-sm-3 col-lg-3 col-md-3">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/260x150" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">$24.99</h4>
-                                <h4><a href="#">First Product</a>
-                                </h4>
-                                <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">15 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-3 col-lg-3 col-md-3">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/260x150" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">$64.99</h4>
-                                <h4><a href="#">Second Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">12 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-3 col-lg-3 col-md-3">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/260x150" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">$74.99</h4>
-                                <h4><a href="#">Third Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">31 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-3 col-lg-3 col-md-3">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/260x150" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">$84.99</h4>
-                                <h4><a href="#">Fourth Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">6 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>  
-                </div>
-                <div class="row">
-                    <textarea id="mytextarea" cols="30" rows="20"></textarea>
-                </div>
-            </div>
-        </div>
-       
+        @yield('content')
     </div>
     <!-- /.container -->
 
@@ -246,6 +115,9 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="{{asset('bootstrap/js/bootstrap.min.js') }}"></script>
     <script src="{{asset('tinymce/tinymce.min.js') }}"></script>
+    <script src="{{asset('js/bootstrap-toggle.js') }}"></script>
+    <script src="{{asset('js/bootstrap-datepicker.min.js') }}"></script>
+     <script src="{{asset('js/bootstrap-toggle.js') }}"></script>
     <script>
         tinymce.init({
                 selector: "textarea",
@@ -266,7 +138,64 @@
                filemanager_title:"Responsive Filemanager" ,
                external_plugins: { "filemanager" : "/filemanager/plugin.min.js"}
              });
+
+
+         $(function () { $('#collapseFour').collapse({
+              toggle: false
+           })});
+          
+           $(function () { $('#collapseTwo').collapse('show')});
+           $(function () { $('#collapseThree').collapse('toggle')});
+           $(function () { $('#collapseOne').collapse('hide')});
+
+           $('.btn-toggle').click(function() {
+            $(this).find('.btn').toggleClass('active');  
+            
+            if ($(this).find('.btn-primary').size()>0) {
+                $(this).find('.btn').toggleClass('btn-primary');
+            }
+            if ($(this).find('.btn-danger').size()>0) {
+                $(this).find('.btn').toggleClass('btn-danger');
+            }
+            if ($(this).find('.btn-success').size()>0) {
+                $(this).find('.btn').toggleClass('btn-success');
+            }
+            if ($(this).find('.btn-info').size()>0) {
+                $(this).find('.btn').toggleClass('btn-info');
+            }
+            
+            $(this).find('.btn').toggleClass('btn-default');
+               
+        });
     </script>
+    <script>
+      var firstDayOfMonth = function() {
+            // your special logic...
+            return 5;
+        };
+
+        var d = new Date();
+        var currMonth = d.getMonth();
+        var currYear = d.getFullYear();
+        var startDate = new Date(currYear,currMonth,firstDayOfMonth());
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();  
+            //For datepicker
+            $('#married_date').datepicker({
+                format: "yyyy-mm-dd",
+                //todayBtn: true,
+                clearBtn: true,
+                //orientation: "top auto",
+                //daysOfWeekHighlighted: "0,6",
+                //calendarWeeks: true,
+                autoclose: true,
+                todayHighlight: true,
+                //datesDisabled: ['03/06/2016', '03/21/2016'],
+                toggleActive: true
+            });
+            $('#married_date').datepicker('setDate',startDate);
+        });
+ </script>
 
 </body>
 </html>

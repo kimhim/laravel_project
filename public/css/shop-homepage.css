@@ -70,10 +70,9 @@ Follow me on Twitter @maridlcrmn
 .btn.btn-outline { background-color: transparent; }
 
 
-.navbar, .dropdown-menu{
+.navbar{
 background:#09ba32;
 border: none;
-
 }
 
 .nav>li>a:focus, .nav>li>a:hover,.nav .open>a, .nav .open>a:focus, .nav .open>a:hover, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
