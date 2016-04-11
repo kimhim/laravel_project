@@ -13,6 +13,7 @@
     <link href="{{asset('css/shop-homepage.css') }}" rel="stylesheet">
     <link href="{{asset('css/bootstrap-datepicker.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/bootstrap-toggle.css') }}" rel="stylesheet">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -39,15 +40,15 @@
                     <li><a href="listuser.php">គ្រប់គ្រងអ្នកប្រើប្រាស់</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <?php 
+                    <?php
                     if(isset($_SESSION['login_user'])){
                         session_start();
                         ?>
                         <li>
                             <a href="#">
-                            Welcome to : 
-                            <?php 
-                                
+                            Welcome to :
+                            <?php
+
                                 echo $_SESSION['login_user'];
                             ?>
                             </a>
@@ -57,7 +58,7 @@
                                 ចាកចេញ <img src="./asset/logout.png"  alt="ចាកចេញ" title="ចាកចេញ"/>
                             </a>
                         </li>
-                        <?php 
+                        <?php
                     }
                     if(!isset($_SESSION['login_user'])){
                         ?>
@@ -89,7 +90,7 @@
         </div>
     </nav>
     <!-- Page Content -->
-    <div class="container">
+    <div class="container wrapper-container">
         @yield('content')
     </div>
     <!-- /.container -->
@@ -114,16 +115,38 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="{{asset('bootstrap/js/bootstrap.min.js') }}"></script>
+
     <script src="{{asset('tinymce/tinymce.min.js') }}"></script>
     <script src="{{asset('js/bootstrap-toggle.js') }}"></script>
     <script src="{{asset('js/bootstrap-datepicker.min.js') }}"></script>
+    <script
+		src="http://uguru-realestate-us-jun202013.businesscatalyst.com/3d-slider/sliderengine/amazingslider.js"></script>
+    <script src="http://uguru-realestate-us-jun202013.businesscatalyst.com/3d-slider/sliderengine/initslider-1.js"></script>
      <script src="{{asset('js/bootstrap-toggle.js') }}"></script>
     <script>
+	    $('.btn-toggle').click(function() {
+	        $(this).find('.btn').toggleClass('active');
+
+	        if ($(this).find('.btn-primary').size()>0) {
+	            $(this).find('.btn').toggleClass('btn-primary');
+	        }
+	        if ($(this).find('.btn-danger').size()>0) {
+	            $(this).find('.btn').toggleClass('btn-danger');
+	        }
+	        if ($(this).find('.btn-success').size()>0) {
+	            $(this).find('.btn').toggleClass('btn-success');
+	        }
+	        if ($(this).find('.btn-info').size()>0) {
+	            $(this).find('.btn').toggleClass('btn-info');
+	        }
+
+	        $(this).find('.btn').toggleClass('btn-default');
+
+	    });
+
         tinymce.init({
                 selector: "textarea",
                 theme: "modern",
-                width: 680,
-                height: 300,
                 image_caption:true,
                 language:'km_KH',
                 plugins: [
@@ -138,35 +161,6 @@
                filemanager_title:"Responsive Filemanager" ,
                external_plugins: { "filemanager" : "/filemanager/plugin.min.js"}
              });
-
-
-         $(function () { $('#collapseFour').collapse({
-              toggle: false
-           })});
-          
-           $(function () { $('#collapseTwo').collapse('show')});
-           $(function () { $('#collapseThree').collapse('toggle')});
-           $(function () { $('#collapseOne').collapse('hide')});
-
-           $('.btn-toggle').click(function() {
-            $(this).find('.btn').toggleClass('active');  
-            
-            if ($(this).find('.btn-primary').size()>0) {
-                $(this).find('.btn').toggleClass('btn-primary');
-            }
-            if ($(this).find('.btn-danger').size()>0) {
-                $(this).find('.btn').toggleClass('btn-danger');
-            }
-            if ($(this).find('.btn-success').size()>0) {
-                $(this).find('.btn').toggleClass('btn-success');
-            }
-            if ($(this).find('.btn-info').size()>0) {
-                $(this).find('.btn').toggleClass('btn-info');
-            }
-            
-            $(this).find('.btn').toggleClass('btn-default');
-               
-        });
     </script>
     <script>
       var firstDayOfMonth = function() {
@@ -179,15 +173,15 @@
         var currYear = d.getFullYear();
         var startDate = new Date(currYear,currMonth,firstDayOfMonth());
         $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();  
+            $('[data-toggle="tooltip"]').tooltip();
             //For datepicker
             $('#married_date').datepicker({
                 format: "yyyy-mm-dd",
                 //todayBtn: true,
                 clearBtn: true,
-                //orientation: "top auto",
+                orientation: "top auto",
                 //daysOfWeekHighlighted: "0,6",
-                //calendarWeeks: true,
+                calendarWeeks: true,
                 autoclose: true,
                 todayHighlight: true,
                 //datesDisabled: ['03/06/2016', '03/21/2016'],
@@ -195,6 +189,26 @@
             });
             $('#married_date').datepicker('setDate',startDate);
         });
+
+        $('.btn-toggle').click(function() {
+    		$(this).find('.btn').toggleClass('active');
+
+    		if ($(this).find('.btn-primary').size()>0) {
+    			$(this).find('.btn').toggleClass('btn-primary');
+    		}
+    		if ($(this).find('.btn-danger').size()>0) {
+    			$(this).find('.btn').toggleClass('btn-danger');
+    		}
+    		if ($(this).find('.btn-success').size()>0) {
+    			$(this).find('.btn').toggleClass('btn-success');
+    		}
+    		if ($(this).find('.btn-info').size()>0) {
+    			$(this).find('.btn').toggleClass('btn-info');
+    		}
+
+    		$(this).find('.btn').toggleClass('btn-default');
+
+    	});
  </script>
 
 </body>

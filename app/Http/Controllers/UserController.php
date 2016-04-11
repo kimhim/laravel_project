@@ -1,6 +1,11 @@
-<?php 
+<?php
 namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Http\Request;
+use App\Http\Requests;
+use App\Http\Requests\UserRegisterValidation;
+use Illuminate\Support\Facades\Validator;
 
 class UserController extends Controller {
 
@@ -13,6 +18,11 @@ class UserController extends Controller {
     public function index()
     {
         return view('user.create');
+    }
+
+    public function store(UserRegisterValidation $request){
+    	return 'success';
+
     }
 
 }

@@ -10,7 +10,9 @@
 body {
    font-family: 'Nokora'; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
    font-size: 16px;
-   margin-top:70px;
+}
+.wrapper-container{
+	padding-top:70px;
 }
 .slide-image {
     width: 100%;
@@ -130,6 +132,9 @@ Icon Animation*/
     -ms-transition: all 0.8s;
     transition: all 0.8s;
 }
+
+.btn-glyphicon { padding:8px; background:#ffffff; margin-right:4px; }
+.icon-btn { padding: 1px 15px 3px 2px; border-radius:50px;}
 
 
 @media screen and (max-width: 767px) {
