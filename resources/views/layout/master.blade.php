@@ -9,6 +9,8 @@
      <title>@yield('title')</title>
     <!-- Bootstrap Core CSS -->
     <link href="{{asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+	<link href="{{asset('css/fileinput.css') }}" media="all" rel="stylesheet" type="text/css" />
+	<link href="{{asset('css/fileinput.css') }}" media="all" rel="stylesheet" type="text/css" />
     <!-- Custom CSS -->
     <link href="{{asset('css/shop-homepage.css') }}" rel="stylesheet">
     <link href="{{asset('css/bootstrap-datepicker.min.css')}}" rel="stylesheet">
@@ -91,6 +93,17 @@
     </nav>
     <!-- Page Content -->
     <div class="container wrapper-container">
+		<div class="container kv-main">
+            <form enctype="multipart/form-data">
+            <hr>
+            <h4>Multi Language Inputs</h4>
+            <form enctype="multipart/form-data">
+                <label>French Input</label>
+                <input id="file-fr" name="file-es[]" type="file" multiple>
+            </form>
+            <hr>
+            <br>
+        </div>
         @yield('content')
     </div>
     <!-- /.container -->
@@ -114,16 +127,19 @@
     <script src="{{asset('js/jquery.js') }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="{{asset('bootstrap/js/bootstrap.min.js') }}"></script>
+	<script src="{{asset('js/js/fileinput.js')}}" type="text/javascript"></script>
+	<script src="{{asset('js/js/fileinput_locale_es.js')}}" type="text/javascript"></script>
+	<script src="{{asset('js/js/fileinput_locale_es.js')}}" type="text/javascript"></script>
+    <script src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
 
     <script src="{{asset('tinymce/tinymce.min.js') }}"></script>
     <script src="{{asset('js/bootstrap-toggle.js') }}"></script>
     <script src="{{asset('js/bootstrap-datepicker.min.js') }}"></script>
-    <script
-		src="http://uguru-realestate-us-jun202013.businesscatalyst.com/3d-slider/sliderengine/amazingslider.js"></script>
+    <script src="http://uguru-realestate-us-jun202013.businesscatalyst.com/3d-slider/sliderengine/amazingslider.js"></script>
     <script src="http://uguru-realestate-us-jun202013.businesscatalyst.com/3d-slider/sliderengine/initslider-1.js"></script>
-     <script src="{{asset('js/bootstrap-toggle.js') }}"></script>
-    <script>
+    <script src="{{asset('js/bootstrap-toggle.js') }}"></script>
+</body>
+<script>
 	    $('.btn-toggle').click(function() {
 	        $(this).find('.btn').toggleClass('active');
 
@@ -210,6 +226,75 @@
 
     	});
  </script>
-
-</body>
+<script>
+    $('#file-fr').fileinput({
+        language: 'fr',
+        uploadUrl: '#',
+        allowedFileExtensions : ['jpg', 'png','gif'],
+    });
+    $('#file-es').fileinput({
+        language: 'es',
+        uploadUrl: '#',
+        allowedFileExtensions : ['jpg', 'png','gif'],
+    });
+    $("#file-0").fileinput({
+        'allowedFileExtensions' : ['jpg', 'png','gif'],
+    });
+    $("#file-1").fileinput({
+        uploadUrl: '#', // you must set a valid URL here else you will get an error
+        allowedFileExtensions : ['jpg', 'png','gif'],
+        overwriteInitial: false,
+        maxFileSize: 1000,
+        maxFilesNum: 10,
+        //allowedFileTypes: ['image', 'video', 'flash'],
+        slugCallback: function(filename) {
+            return filename.replace('(', '_').replace(']', '_');
+        }
+	});
+    /*
+    $(".file").on('fileselect', function(event, n, l) {
+        alert('File Selected. Name: ' + l + ', Num: ' + n);
+    });
+    */
+	$("#file-3").fileinput({
+		showUpload: false,
+		showCaption: false,
+		browseClass: "btn btn-primary btn-lg",
+		fileType: "any",
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>"
+	});
+	$("#file-4").fileinput({
+		uploadExtraData: {kvId: '10'}
+	});
+    $(".btn-warning").on('click', function() {
+        if ($('#file-4').attr('disabled')) {
+            $('#file-4').fileinput('enable');
+        } else {
+            $('#file-4').fileinput('disable');
+        }
+    });    
+    $(".btn-info").on('click', function() {
+        $('#file-4').fileinput('refresh', {previewClass:'bg-info'});
+    });
+    /*
+    $('#file-4').on('fileselectnone', function() {
+        alert('Huh! You selected no files.');
+    });
+    $('#file-4').on('filebrowse', function() {
+        alert('File browse clicked for #file-4');
+    });
+    */
+    $(document).ready(function() {
+        $("#test-upload").fileinput({
+            'showPreview' : false,
+            'allowedFileExtensions' : ['jpg', 'png','gif'],
+            'elErrorContainer': '#errorBlock'
+        });
+        /*
+        $("#test-upload").on('fileloaded', function(event, file, previewId, index) {
+            alert('i = ' + index + ', id = ' + previewId + ', file = ' + file.name);
+        });
+        */
+    });
+	</script>
 </html>
