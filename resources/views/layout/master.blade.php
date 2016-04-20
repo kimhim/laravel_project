@@ -93,17 +93,6 @@
     </nav>
     <!-- Page Content -->
     <div class="container wrapper-container">
-		<div class="container kv-main">
-            <form enctype="multipart/form-data">
-            <hr>
-            <h4>Multi Language Inputs</h4>
-            <form enctype="multipart/form-data">
-                <label>French Input</label>
-                <input id="file-fr" name="file-es[]" type="file" multiple>
-            </form>
-            <hr>
-            <br>
-        </div>
         @yield('content')
     </div>
     <!-- /.container -->
@@ -272,7 +261,7 @@
         } else {
             $('#file-4').fileinput('disable');
         }
-    });    
+    });
     $(".btn-info").on('click', function() {
         $('#file-4').fileinput('refresh', {previewClass:'bg-info'});
     });

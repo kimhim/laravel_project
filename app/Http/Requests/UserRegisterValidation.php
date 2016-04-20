@@ -24,7 +24,7 @@ class UserRegisterValidation extends Request
     public function rules()
     {
         return [
-			'name' => 'required','password'=>'required'
+			'name' => 'required','password'=>'required','gallery'=>'required'
 		];
 	}
 
@@ -32,7 +32,8 @@ class UserRegisterValidation extends Request
 	{
 		return [
 				'name.required' => 'ឈ្មោះអ្នកប្រើប្រាស់​ត្រូវតែបញ្ចូល!',
-				'password.required' => 'លេខ​សំងាត់​ត្រូវតែបញ្ចូល!'
+				'password.required' => 'លេខ​សំងាត់​ត្រូវតែបញ្ចូល!',
+				'gallery.required' => 'បញ្ចូល​រូប​ភាព​យ៉ាង​ហោច​ណាស់​មួយ!'
 		];
 	}
 

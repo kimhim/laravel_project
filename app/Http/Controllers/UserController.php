@@ -21,8 +21,8 @@ class UserController extends Controller {
     }
 
     public function store(UserRegisterValidation $request){
-    	return 'success';
-
+    	return $request->file('gallery');
+    	exit;
     }
 
 }

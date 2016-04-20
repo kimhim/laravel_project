@@ -8,7 +8,7 @@
 	   		<div class="col-lg-10">
 	   			<h1 class="text-center">ចុះឈ្មោះ​គូរស្មាមីភរិយាថ្មី</h1>
 				<form class="form-horizontal" role="form" action="{{route('user.submit')}}" method="post" enctype="multipart/form-data">
-				<input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
+					<input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
 					<div class="form-group">
 						<label for="user_name" class="col-sm-4 control-label">ឈ្មោះ​អ្នក​ប្រើប្រាស់​</label>
 						<div class="col-sm-4">
@@ -17,7 +17,7 @@
 						</div>
 						<div class="col-sm-4">
 							@if ($errors->has('name'))
-								    <div class = "alert alert-danger alert-dismissable" style="padding-top:5px;padding-bottom:2px;margin-bottom:2px;">
+								    <div class = "alert alert-danger alert-dismissable" style="padding-top:5px;padding-bottom:1px;margin-bottom:3px;">
 									   <div class = "close" data-dismiss = "alert" aria-hidden = "true">
 									      &times;
 									   </div>
@@ -34,11 +34,11 @@
 						</div>
 						<div class="col-sm-4">
 							@if ($errors->has('password'))
-								    <div class = "alert alert-danger alert-dismissable" style="padding-top:5px;padding-bottom:3px;margin-bottom:3px;">
+								    <div class = "alert alert-danger alert-dismissable" style="padding-top:5px;padding-bottom:1px;margin-bottom:3px;">
 									   <div class = "close" data-dismiss = "alert" aria-hidden = "true">
 									      &times;
 									   </div>
-										 <span class="glyphicon glyphicon-user"></span> {{ $errors->first('password') }}
+										 <span class="glyphicon glyphicon-lock"></span> {{ $errors->first('password') }}
 									</div>
 								@endif
 						</div>
@@ -51,7 +51,7 @@
 						</div>
 						<div class="col-sm-4">
 							@if ($errors->has('groom_name'))
-								    <div class = "alert alert-danger alert-dismissable" style="padding-top:5px;padding-bottom:3px;margin-bottom:3px;">
+								    <div class = "alert alert-danger alert-dismissable" style="padding-top:5px;padding-bottom:1px;margin-bottom:3px;">
 									   <div class = "close" data-dismiss = "alert" aria-hidden = "true">
 									      &times;
 									   </div>
@@ -163,6 +163,25 @@
 						</div>
 					</div>
 
+					<div class="form-group">
+						<label for="gallery" class="col-sm-4 control-label">រូប​ថត​កំរង​អានុស្សាវរីយ៍</label>
+						<div class="col-lg-8">
+							 <input id="file-fr" name="gallery" type="file" multiple />
+						</div>
+					</div>
+							@if ($errors->has('gallery'))
+								<div class="form-group">
+									<label for="gallery" class="col-sm-4 control-label"></label>
+									<div class="col-lg-8">
+										 <div class = "alert alert-danger alert-dismissable" style="padding-top:5px;padding-bottom:1px;margin-bottom:3px;">
+										   <div class = "close" data-dismiss = "alert" aria-hidden = "true">
+										      &times;
+										   </div>
+											 <span class="glyphicon glyphicon-picture"></span> {{ $errors->first('gallery') }}
+										</div>
+									</div>
+								</div>
+							@endif
 					<div class="form-group text-center">
 						<div class="col-sm-offset-4 col-sm-8">
 							<a href="." class="btn icon-btn btn-warning text-left"><span class="glyphicon glyphicon-arrow-left glyphicon btn-glyphicon glyphicon-plus img-circle text-danger"></span> ត្រលប់ក្រោយ</a>
