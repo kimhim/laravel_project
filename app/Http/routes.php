@@ -13,6 +13,7 @@
 
 Route::get('user/registration', ['as' => 'user.create', 'middleware' => ['web'], 'uses' => 'UserController@index']);
 Route::post('user/submit', ['as' => 'user.submit', 'middleware' => ['web'], 'uses' => 'UserController@store']);
+Route::post('user/json', ['as' => 'user.json', 'middleware' => ['web'], 'uses' => 'UserController@userjson']);
 
 // Route::get('user/registration', ['as' => 'user.create', 'uses' => 'UserController@index']);
 // Route::post('user/submit', ['as' => 'user.submit', 'uses' => 'UserController@store']);

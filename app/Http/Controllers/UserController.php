@@ -25,4 +25,8 @@ class UserController extends Controller {
     	exit;
     }
 
+    public function userjson(){
+		return view('user.json');
+    }
+
 }
