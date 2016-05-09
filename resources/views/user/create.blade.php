@@ -182,15 +182,6 @@
 							</div>
 						</div>
 					@endif
-					<div class="form-group">
-						<label for="gallery" class="col-sm-4 control-label">Test Upload image</label>
-						<div class="col-lg-8">
-							<span class="fileUpload btn btn-default">
-								<span class="glyphicon glyphicon-upload"></span> Upload file
-								<input type="file" id="uploadFile" />
-							</span>
-						</div>
-					</div>
 					<div class="form-group text-center">
 						<div class="col-sm-offset-4 col-sm-8">
 							<a href="." class="btn icon-btn btn-warning text-left"><span class="glyphicon glyphicon-arrow-left glyphicon btn-glyphicon glyphicon-plus img-circle text-danger"></span> ត្រលប់ក្រោយ</a>

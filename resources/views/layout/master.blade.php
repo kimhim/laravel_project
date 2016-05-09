@@ -93,6 +93,7 @@
     </nav>
     <!-- Page Content -->
     <div class="container wrapper-container">
+    	{{trans('validation.go')}}
         @yield('content')
     </div>
     <!-- /.container -->
