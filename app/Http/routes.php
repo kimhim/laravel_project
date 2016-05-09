@@ -18,7 +18,7 @@ Route::post('user/json', ['as' => 'user.json', 'middleware' => ['web'], 'uses' =
 Route::get('/setlang/{lang}', function($lang)
     {
         Session::put('locale', $lang);
-        return redirect('/');
+       return redirect('/');
     });
 
 Route::get('testlang', function(){
