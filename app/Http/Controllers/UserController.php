@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Requests\UserRegisterValidation;
 use Illuminate\Support\Facades\Validator;
+use App\Http\Controllers\Session;
 
 class UserController extends Controller {
 
@@ -28,5 +29,4 @@ class UserController extends Controller {
     public function userjson(){
 		return view('user.json');
     }
-
 }
