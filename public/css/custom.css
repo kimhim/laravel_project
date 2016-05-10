@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Akbalthom;
+    src: url('/fonts/AKbalthom Kbach [Version 3.00].ttf');
+}
+span.company_first_name{
+  font-size:24px;
+  font-family:"Kh Muol";
+  color:#5cb85c;
+}
+span.company_last_name{
+  font-size:24px;
+  font-family:"Akbalthom";
+  color:#f0ad4e;
+}

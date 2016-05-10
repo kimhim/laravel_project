@@ -7,7 +7,7 @@ use App;
 
 class LanguageMiddleware
 {
-	protected $languages = ['en','kh'];
+	protected $languages = ['kh','en'];
 
     /**
      * Handle an incoming request.

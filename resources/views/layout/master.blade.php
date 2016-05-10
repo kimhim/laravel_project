@@ -46,8 +46,27 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+     <link href="{{asset('css/custom.css') }}" rel="stylesheet" type="text/css">
+     <style>
+		<?php
+		$language = Session::get('locale');
+		if($language =='kh'){
+			$font_family = "Akbalthom";
+			$font_size = "14px";
+		}else{
+			$font_family = "Arail";
+			$font_size = "16px";
+		}
+		?>
+		html, body, span,b,p,strong,h1,h2,h3,h4,font,em,div{
+			font-family:<?php echo $font_family?>;
+			font-size:<?php echo $font_size?>
+		}
+     </style>
+
 </head>
 <body>
+{{$language}}
      <div id="wrapper">
 
         <!-- Navigation -->
@@ -59,7 +78,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Staff Management System <em>KH system</em>   <strong>{{trans('validation.go')}}</strong></a>
+                <a class="navbar-brand" href="index.html"><span class="company_first_name">ខេអេច</span> <span class="company_last_name">តិចណូឡូជី </span></a>
             </div>
             <!-- /.navbar-header -->
 
@@ -70,10 +89,10 @@
                     </a>
                     <ul class="dropdown-menu dropdown-user">
                         <li>
-                            <a href="setlang/kh">Khmer</a>
+                            <a href="setlang/kh"><img src="{{asset('img/Cambodia.png')}}" alt="Cambodia" title="Cambodia" style="height: 20px;"/> Khmer </a>
                         </li>
                         <li>
-                            <a href="setlang/en">English</a>
+                            <a href="setlang/en"><img src="{{asset('img/English.png')}}" alt="English" title="English" style="height: 20px;"/> English </a>
                         </li>
                     </ul>
                     <!-- /.dropdown-messages -->
@@ -304,7 +323,13 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> {{trans('menu.dashboard')}} </a>
+                        </li>
+                         <li>
+                            <a href="index.html"><i class="fa fa-user" aria-hidden="true"></i> {{trans('menu.staff_management')}} </a>
+                        </li>
+                         <li>
+                            <a href="index.html"><i class="fa fa-users" aria-hidden="true"></i> {{trans('menu.staff_attendance_management')}} </a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
