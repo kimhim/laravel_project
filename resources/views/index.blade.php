@@ -3,131 +3,726 @@
     Welcome to my page
 @endsection
 @section('content')
-   <div class="row">
-        <div class="col-md-12">
-            <div class="row carousel-holder">
-                <div class="col-md-12">
-                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img class="slide-image" src="http://placehold.it/1140x350" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="slide-image" src="http://placehold.it/1140x350" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="slide-image" src="http://placehold.it/1140x350" alt="">
-                            </div>
-                        </div>
-                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                        </a>
-                    </div>
+  <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Dashboard</h1>
                 </div>
-
+                <!-- /.col-lg-12 -->
             </div>
-
+            <!-- /.row -->
             <div class="row">
-
-                <div class="col-sm-3 col-lg-3 col-md-3">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/260x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">$24.99</h4>
-                            <h4><a href="#">First Product</a>
-                            </h4>
-                            <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-comments fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">26</div>
+                                    <div>New Comments!</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="ratings">
-                            <p class="pull-right">15 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </p>
-                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-
-                <div class="col-sm-3 col-lg-3 col-md-3">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/260x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">$64.99</h4>
-                            <h4><a href="#">Second Product</a>
-                            </h4>
-                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-green">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-tasks fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">12</div>
+                                    <div>New Tasks!</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="ratings">
-                            <p class="pull-right">12 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                            </p>
-                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-
-                <div class="col-sm-3 col-lg-3 col-md-3">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/260x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">$74.99</h4>
-                            <h4><a href="#">Third Product</a>
-                            </h4>
-                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-yellow">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-shopping-cart fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">124</div>
+                                    <div>New Orders!</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="ratings">
-                            <p class="pull-right">31 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                            </p>
-                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-
-                <div class="col-sm-3 col-lg-3 col-md-3">
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/260x150" alt="">
-                        <div class="caption">
-                            <h4 class="pull-right">$84.99</h4>
-                            <h4><a href="#">Fourth Product</a>
-                            </h4>
-                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-red">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-support fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">13</div>
+                                    <div>Support Tickets!</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="ratings">
-                            <p class="pull-right">6 reviews</p>
-                            <p>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                                <span class="glyphicon glyphicon-star-empty"></span>
-                            </p>
-                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
                     </div>
-                </div>  
+                </div>
             </div>
+            <!-- /.row -->
             <div class="row">
-                <textarea id="mytextarea" cols="30" rows="20"></textarea>
+                <div class="col-lg-8">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Area Chart Example
+                            <div class="pull-right">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                        Actions
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu pull-right" role="menu">
+                                        <li><a href="#">Action</a>
+                                        </li>
+                                        <li><a href="#">Another action</a>
+                                        </li>
+                                        <li><a href="#">Something else here</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div id="morris-area-chart"></div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
+                            <div class="pull-right">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                        Actions
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu pull-right" role="menu">
+                                        <li><a href="#">Action</a>
+                                        </li>
+                                        <li><a href="#">Another action</a>
+                                        </li>
+                                        <li><a href="#">Something else here</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-hover table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Date</th>
+                                                    <th>Time</th>
+                                                    <th>Amount</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>3326</td>
+                                                    <td>10/21/2013</td>
+                                                    <td>3:29 PM</td>
+                                                    <td>$321.33</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3325</td>
+                                                    <td>10/21/2013</td>
+                                                    <td>3:20 PM</td>
+                                                    <td>$234.34</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3324</td>
+                                                    <td>10/21/2013</td>
+                                                    <td>3:03 PM</td>
+                                                    <td>$724.17</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3323</td>
+                                                    <td>10/21/2013</td>
+                                                    <td>3:00 PM</td>
+                                                    <td>$23.71</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3322</td>
+                                                    <td>10/21/2013</td>
+                                                    <td>2:49 PM</td>
+                                                    <td>$8345.23</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3321</td>
+                                                    <td>10/21/2013</td>
+                                                    <td>2:23 PM</td>
+                                                    <td>$245.12</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3320</td>
+                                                    <td>10/21/2013</td>
+                                                    <td>2:15 PM</td>
+                                                    <td>$5663.54</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3319</td>
+                                                    <td>10/21/2013</td>
+                                                    <td>2:13 PM</td>
+                                                    <td>$943.45</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- /.table-responsive -->
+                                </div>
+                                <!-- /.col-lg-4 (nested) -->
+                                <div class="col-lg-8">
+                                    <div id="morris-bar-chart"></div>
+                                </div>
+                                <!-- /.col-lg-8 (nested) -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-clock-o fa-fw"></i> Responsive Timeline
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <ul class="timeline">
+                                <li>
+                                    <div class="timeline-badge"><i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 11 hours ago via Twitter</small>
+                                            </p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam dolor perspiciatis omnis exercitationem. Beatae, officia pariatur? Est cum veniam excepturi. Maiores praesentium, porro voluptas suscipit facere rem dicta, debitis.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <div class="timeline-badge warning"><i class="fa fa-credit-card"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolorem quibusdam, tenetur commodi provident cumque magni voluptatem libero, quis rerum. Fugiat esse debitis optio, tempore. Animi officiis alias, officia repellendus.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maiores odit qui est tempora eos, nostrum provident explicabo dignissimos debitis vel! Adipisci eius voluptates, ad aut recusandae minus eaque facere.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timeline-badge danger"><i class="fa fa-bomb"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam facilis enim eaque, tenetur nam id qui vel velit similique nihil iure molestias aliquam, voluptatem totam quaerat, magni commodi quisquam.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates est quaerat asperiores sapiente, eligendi, nihil. Itaque quos, alias sapiente rerum quas odit! Aperiam officiis quidem delectus libero, omnis ut debitis!</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timeline-badge info"><i class="fa fa-save"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis minus modi quam ipsum alias at est molestiae excepturi delectus nesciunt, quibusdam debitis amet, beatae consequuntur impedit nulla qui! Laborum, atque.</p>
+                                            <hr>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                                                    <i class="fa fa-gear"></i>  <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a href="#">Action</a>
+                                                    </li>
+                                                    <li><a href="#">Another action</a>
+                                                    </li>
+                                                    <li><a href="#">Something else here</a>
+                                                    </li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Separated link</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi fuga odio quibusdam. Iure expedita, incidunt unde quis nam! Quod, quisquam. Officia quam qui adipisci quas consequuntur nostrum sequi. Consequuntur, commodi.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <div class="timeline-badge success"><i class="fa fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt obcaecati, quaerat tempore officia voluptas debitis consectetur culpa amet, accusamus dolorum fugiat, animi dicta aperiam, enim incidunt quisquam maxime neque eaque.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-8 -->
+                <div class="col-lg-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bell fa-fw"></i> Notifications Panel
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small"><em>4 minutes ago</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small"><em>12 minutes ago</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <span class="pull-right text-muted small"><em>27 minutes ago</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small"><em>43 minutes ago</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small"><em>11:32 AM</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-bolt fa-fw"></i> Server Crashed!
+                                    <span class="pull-right text-muted small"><em>11:13 AM</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-warning fa-fw"></i> Server Not Responding
+                                    <span class="pull-right text-muted small"><em>10:57 AM</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-shopping-cart fa-fw"></i> New Order Placed
+                                    <span class="pull-right text-muted small"><em>9:49 AM</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-money fa-fw"></i> Payment Received
+                                    <span class="pull-right text-muted small"><em>Yesterday</em>
+                                    </span>
+                                </a>
+                            </div>
+                            <!-- /.list-group -->
+                            <a href="#" class="btn btn-default btn-block">View All Alerts</a>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Donut Chart Example
+                        </div>
+                        <div class="panel-body">
+                            <div id="morris-donut-chart"></div>
+                            <a href="#" class="btn btn-default btn-block">View Details</a>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                    <div class="chat-panel panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-comments fa-fw"></i>
+                            Chat
+                            <div class="btn-group pull-right">
+                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-chevron-down"></i>
+                                </button>
+                                <ul class="dropdown-menu slidedown">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-refresh fa-fw"></i> Refresh
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-check-circle fa-fw"></i> Available
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-times fa-fw"></i> Busy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-clock-o fa-fw"></i> Away
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-sign-out fa-fw"></i> Sign Out
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <ul class="chat">
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font">Jack Sparrow</strong>
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
+                                            </small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
+                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font">Jack Sparrow</strong>
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small>
+                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.panel-body -->
+                        <div class="panel-footer">
+                            <div class="input-group">
+                                <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-warning btn-sm" id="btn-chat">
+                                        Send
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- /.panel-footer -->
+                    </div>
+                    <!-- /.panel .chat-panel -->
+                </div>
+                <!-- /.col-lg-4 -->
             </div>
-        </div>
-    </div>
+            <!-- /.row -->
+@endsection
+@section('scripts')
+       <!-- Bootstrap Core JavaScript -->
+	<script src="{{asset('/js/js/fileinput.js')}}" type="text/javascript"></script>
+	<script src="{{asset('/js/js/fileinput_locale_es.js')}}" type="text/javascript"></script>
+	<script src="{{asset('/js/js/fileinput_locale_es.js')}}" type="text/javascript"></script>
+<!--     <script src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script> -->
+
+    <script src="{{asset('/tinymce/tinymce.min.js') }}"></script>
+    <script src="{{asset('/js/bootstrap-toggle.js') }}"></script>
+    <script src="{{asset('/js/bootstrap-datepicker.min.js') }}"></script>
+    <script src="{{asset('/startbootstrap-admin/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="{{asset('/startbootstrap-admin/bower_components/metisMenu/dist/metisMenu.min.js') }}"></script>
+	 <script src="{{asset('/startbootstrap-admin/bower_components/morrisjs/morris.min.js') }}"></script>
+    <script src="{{asset('/startbootstrap-admin/js/morris-data.js') }}"></script>
+    <!-- Morris Charts JavaScript -->
+    <script src="{{asset('/startbootstrap-admin/bower_components/raphael/raphael-min.js') }}"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{{asset('/startbootstrap-admin/dist/js/sb-admin-2.js') }}"></script>
+
+    <script src="{{asset('/js/bootstrap-toggle.js') }}"></script>
+	<script>
+	    $('.btn-toggle').click(function() {
+	        $(this).find('.btn').toggleClass('active');
+
+	        if ($(this).find('.btn-primary').size()>0) {
+	            $(this).find('.btn').toggleClass('btn-primary');
+	        }
+	        if ($(this).find('.btn-danger').size()>0) {
+	            $(this).find('.btn').toggleClass('btn-danger');
+	        }
+	        if ($(this).find('.btn-success').size()>0) {
+	            $(this).find('.btn').toggleClass('btn-success');
+	        }
+	        if ($(this).find('.btn-info').size()>0) {
+	            $(this).find('.btn').toggleClass('btn-info');
+	        }
+
+	        $(this).find('.btn').toggleClass('btn-default');
+
+	    });
+
+        tinymce.init({
+                selector: "textarea",
+                theme: "modern",
+                image_caption:true,
+                language:'km_KH',
+                plugins: [
+                     "advlist autolink link image lists charmap print preview hr anchor pagebreak",
+                     "searchreplace wordcount visualblocks visualchars insertdatetime media nonbreaking",
+                     "table contextmenu directionality emoticons paste textcolor responsivefilemanager code"
+               ],
+               toolbar1: "undo redo | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | styleselect",
+               toolbar2: "| responsivefilemanager | link unlink anchor | image media | forecolor backcolor  | print preview code ",
+               image_advtab: true ,
+               external_filemanager_path:"/filemanager/",
+               filemanager_title:"Responsive Filemanager" ,
+               external_plugins: { "filemanager" : "/filemanager/plugin.min.js"}
+             });
+    </script>
+    <script>
+      var firstDayOfMonth = function() {
+            // your special logic...
+            return 5;
+        };
+
+        var d = new Date();
+        var currMonth = d.getMonth();
+        var currYear = d.getFullYear();
+        var startDate = new Date(currYear,currMonth,firstDayOfMonth());
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+            //For datepicker
+            $('#married_date').datepicker({
+                format: "yyyy-mm-dd",
+                //todayBtn: true,
+                clearBtn: true,
+                orientation: "top auto",
+                //daysOfWeekHighlighted: "0,6",
+                calendarWeeks: true,
+                autoclose: true,
+                todayHighlight: true,
+                //datesDisabled: ['03/06/2016', '03/21/2016'],
+                toggleActive: true
+            });
+            $('#married_date').datepicker('setDate',startDate);
+        });
+
+        $('.btn-toggle').click(function() {
+    		$(this).find('.btn').toggleClass('active');
+
+    		if ($(this).find('.btn-primary').size()>0) {
+    			$(this).find('.btn').toggleClass('btn-primary');
+    		}
+    		if ($(this).find('.btn-danger').size()>0) {
+    			$(this).find('.btn').toggleClass('btn-danger');
+    		}
+    		if ($(this).find('.btn-success').size()>0) {
+    			$(this).find('.btn').toggleClass('btn-success');
+    		}
+    		if ($(this).find('.btn-info').size()>0) {
+    			$(this).find('.btn').toggleClass('btn-info');
+    		}
+
+    		$(this).find('.btn').toggleClass('btn-default');
+
+    	});
+ </script>
+<script>
+    $('#file-fr').fileinput({
+        language: 'fr',
+        uploadUrl: '#',
+        allowedFileExtensions : ['jpg', 'png','gif'],
+    });
+    $('#file-es').fileinput({
+        language: 'es',
+        uploadUrl: '#',
+        allowedFileExtensions : ['jpg', 'png','gif'],
+    });
+    $("#file-0").fileinput({
+        'allowedFileExtensions' : ['jpg', 'png','gif'],
+    });
+    $("#file-1").fileinput({
+        uploadUrl: '#', // you must set a valid URL here else you will get an error
+        allowedFileExtensions : ['jpg', 'png','gif'],
+        overwriteInitial: false,
+        maxFileSize: 1000,
+        maxFilesNum: 10,
+        //allowedFileTypes: ['image', 'video', 'flash'],
+        slugCallback: function(filename) {
+            return filename.replace('(', '_').replace(']', '_');
+        }
+	});
+    /*
+    $(".file").on('fileselect', function(event, n, l) {
+        alert('File Selected. Name: ' + l + ', Num: ' + n);
+    });
+    */
+	$("#file-3").fileinput({
+		showUpload: false,
+		showCaption: false,
+		browseClass: "btn btn-primary btn-lg",
+		fileType: "any",
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>"
+	});
+	$("#file-4").fileinput({
+		uploadExtraData: {kvId: '10'}
+	});
+    $(".btn-warning").on('click', function() {
+        if ($('#file-4').attr('disabled')) {
+            $('#file-4').fileinput('enable');
+        } else {
+            $('#file-4').fileinput('disable');
+        }
+    });
+    $(".btn-info").on('click', function() {
+        $('#file-4').fileinput('refresh', {previewClass:'bg-info'});
+    });
+    /*
+    $('#file-4').on('fileselectnone', function() {
+        alert('Huh! You selected no files.');
+    });
+    $('#file-4').on('filebrowse', function() {
+        alert('File browse clicked for #file-4');
+    });
+    */
+    $(document).ready(function() {
+        $("#test-upload").fileinput({
+            'showPreview' : false,
+            'allowedFileExtensions' : ['jpg', 'png','gif'],
+            'elErrorContainer': '#errorBlock'
+        });
+        /*
+        $("#test-upload").on('fileloaded', function(event, file, previewId, index) {
+            alert('i = ' + index + ', id = ' + previewId + ', file = ' + file.name);
+        });
+        */
+    });
+	</script>
 @endsection
