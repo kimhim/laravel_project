@@ -18,7 +18,7 @@ class UserController extends Controller {
      */
     public function index()
     {
-        return view('user.create');
+        return view('index');
     }
 
     public function store(UserRegisterValidation $request){

@@ -16,17 +16,13 @@ Route::post('user/submit', ['as' => 'user.submit', 'middleware' => ['web'], 'use
 Route::post('user/json', ['as' => 'user.json', 'middleware' => ['web'], 'uses' => 'UserController@userjson']);
 Route::get('login', ['as' => 'user.json', 'middleware' => ['web'], 'uses' => 'UserController@userlogin']);
 Route::get('logout',"AuthController@getLogout");
+Route::get('staff', ['as' => 'staff', 'middleware' => ['web'], 'uses' => 'StaffController@index']);
+Route::get('staff/leave', ['as' => 'staff.leave', 'middleware' => ['web'], 'uses' => 'StaffController@staffList']);
 
 Route::get('/setlang/{lang}', function($lang)
     {
         Session::put('locale', $lang);
        return redirect('/');
-    });
-
-Route::get('testlang', function(){
-
-        return trans('validation.language');
-
     });
 // Route::get('user/registration', ['as' => 'user.create', 'uses' => 'UserController@index']);
 // Route::post('user/submit', ['as' => 'user.submit', 'uses' => 'UserController@store']);
@@ -34,10 +30,4 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/', function () {
         return view('index');
     });
-});
-
-Route::group(['middleware' => 'web'], function () {
-    Route::auth();
-
-    Route::get('/home', 'HomeController@index');
 });
