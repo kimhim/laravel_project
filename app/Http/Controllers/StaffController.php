@@ -5,14 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-<<<<<<< HEAD
-
-class StaffController extends Controller
-{
-    public function stafflist(){
-		return view('user.list');
-	}
-=======
 use App\Http\Controllers\Controller;
 use DB;
 
@@ -27,5 +19,4 @@ ORDER BY s.id DESC'));
     public function staffList(){
     	return view('staff.list');
     }
->>>>>>> d7ff2528870e76dfe2beea37a18343829dc96c20
 }

@@ -55,14 +55,22 @@
      <style>
 		<?php
 		$language = Session::get('locale');
-		if($language =='kh'){
+		if($language =='km'){
 			$font_family = "Akbalthom";
 			$font_size = "14px";
+            $all_font_family="Nokora";
+             $all_font_size="16px";
 		}else{
 			$font_family = "Arail";
 			$font_size = "16px";
+            $all_font_family="Arail";
+            $all_font_size="14px";
 		}
 		?>
+        html,body,span,b,strong,h1,h2,h3,h4,strong,div{
+            font-family:<?php echo $all_font_family?>;
+            font-size:<?php echo $all_font_size?>;
+        }
 		ul#side-menu li a{
 			font-family:<?php echo $font_family?>;
 			font-size:<?php echo $font_size?>
@@ -93,10 +101,10 @@
                     </a>
                     <ul class="dropdown-menu dropdown-user">
                         <li>
-                            <a href="setlang/km"><img src="{{asset('img/Cambodia.png')}}" alt="Cambodia" title="Cambodia" style="height: 20px;"/> Khmer </a>
+                            <a href="/setlang/km"><img src="{{asset('img/Cambodia.png')}}" alt="Cambodia" title="Cambodia" style="height: 20px;"/> Khmer </a>
                         </li>
                         <li>
-                            <a href="setlang/en"><img src="{{asset('img/English.png')}}" alt="English" title="English" style="height: 20px;"/> English </a>
+                            <a href="/setlang/en"><img src="{{asset('img/English.png')}}" alt="English" title="English" style="height: 20px;"/> English </a>
                         </li>
                     </ul>
                     <!-- /.dropdown-messages -->
@@ -303,7 +311,7 @@
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="{{route('logout')}}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -425,7 +433,6 @@
             </div>
             <!-- /.navbar-static-side -->
         </nav>
-
         <div id="page-wrapper">
             @yield('content')
         </div>

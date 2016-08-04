@@ -6,7 +6,9 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Requests\UserRegisterValidation;
 use Illuminate\Support\Facades\Validator;
-use App\Http\Controllers\Session;
+use App\Http\Controllers\Auth;
+use Session;
+use Illuminate\Support\Facades\Redirect;
 
 class UserController extends Controller {
 
@@ -28,5 +30,10 @@ class UserController extends Controller {
 
     public function userjson(){
 		return view('user.json');
+    }
+
+    public function logout(){
+      Session::flush();
+      return redirect('/');
     }
 }

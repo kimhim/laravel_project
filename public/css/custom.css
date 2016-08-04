@@ -2,6 +2,10 @@
     font-family: Akbalthom;
     src: url('/fonts/AKbalthom Kbach [Version 3.00].ttf');
 }
+@font-face {
+    font-family: Nokora;
+    src: url('/fonts/Nokora-Regular.ttf');
+}
 span.company_first_name{
   font-size:24px;
   font-family:"Kh Muol";
